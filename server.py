@@ -9,10 +9,6 @@ print(__name__)
 def home_page():
     return render_template('index.html')
 
-@app.route("/index.html")                       
-def home():
-    return ('Home Homie')
-
 @app.route("/about.html")                       
 def about():
     return render_template('about.html')
