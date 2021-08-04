@@ -15,7 +15,11 @@ def about():
 
 @app.route("/projects.html")                       
 def projects():
-    return ('Projecting Projects')
+    return render_template('projects.html')
+    
+@app.route("/contact.html")                       
+def contact():
+    return render_template('contact.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1')
