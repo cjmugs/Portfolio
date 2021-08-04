@@ -23,7 +23,7 @@ def contact():
 
 @app.route("/download.html")                       
 def download():
-    return 'files are now downloading . . . .'
+    return render_template('download.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1')
