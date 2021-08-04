@@ -21,5 +21,9 @@ def projects():
 def contact():
     return render_template('contact.html')
 
+@app.route("/download.html")                       
+def download():
+    return 'files are now downloading . . . .'
+
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1')
