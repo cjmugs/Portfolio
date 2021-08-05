@@ -25,7 +25,7 @@ def contact():
 def download():
     return render_template('download.html')
 
-@app.route("/data.html")                       
+@app.route("/data.html",methods=['GET', 'POST'])                       
 def data():
     return render_template('data.html')
 
