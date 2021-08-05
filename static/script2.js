@@ -1,6 +1,6 @@
 
 function myFunction() {
-    alert('like serious this might take a really really long time . . . .sorry :{')
+    alert('like seriously this will take a really really long time . . . . sorry :{')
 }
 
 
