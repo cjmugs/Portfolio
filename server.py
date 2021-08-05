@@ -28,8 +28,9 @@ def download():
 @app.route("/data.html",methods=['GET', 'POST'])                       
 def data():
     if request.method == 'POST':
-        f = request.files['contact.html']
-        f.save('data.html')
+        f = []
+        f.append('data.html')
+        return render_template('data.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1')
