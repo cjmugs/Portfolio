@@ -30,7 +30,7 @@ def data():
     if request.method == 'POST':
         req = request.form
         f = []
-        f.append('data.html')
+        f.append('id')
         return render_template('data.html')
 
 if __name__ == '__main__':
