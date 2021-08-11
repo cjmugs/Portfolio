@@ -1,6 +1,7 @@
 .header{
-    background-color: aquamarine;
+    background-color: chartreuse;
     font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
 }
 .body{
     text-align: center;
