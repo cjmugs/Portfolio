@@ -1,5 +1,9 @@
 .body{
     text-align: center;
+    color: whitesmoke;
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
 }
 .me{
     text-align: center;
