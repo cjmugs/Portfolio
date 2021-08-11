@@ -25,12 +25,11 @@ def contact():
 def download():
     return render_template('download.html')
 
-@app.route("/data.html",methods=['GET', 'POST'])                       
-def data():
-    if request.method == 'POST':
-        f = []
-        f.append('id')
-        return render_template('data.html')
+
+@app.route('/submit_form', methods=['POST', 'GET'])
+def submit_form():
+    return render_template('data.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1')
