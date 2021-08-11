@@ -1,5 +1,6 @@
 .header{
     background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .body{
     text-align: center;
@@ -7,18 +8,23 @@
     background-image: url(1.jpg);
     background-repeat: no-repeat;
     background-size: 1920px 1080px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .me{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .projects{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .contact{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .download{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .btn1{
     text-decoration: none;
