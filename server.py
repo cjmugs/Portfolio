@@ -28,7 +28,6 @@ def download():
 @app.route("/data.html",methods=['GET', 'POST'])                       
 def data():
     if request.method == 'POST':
-        req = request.form
         f = []
         f.append('id')
         return render_template('data.html')
