@@ -21,7 +21,7 @@ def projects():
 def contact():
     return render_template('contact.html')
 
-@app.route("/data.html", methods=['POST', 'GET'])
+@app.route("/submit_form", methods=['POST', 'GET'])
 def submit_form():
     if request.method == 'POST':
        data = request.form.to_dict()
