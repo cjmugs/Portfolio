@@ -21,20 +21,18 @@ def projects():
 def contact():
     return render_template('contact.html')
 
-@app.route("/download.html")                       
-def download():
-    return render_template('download.html')
-
-
-@app.route('/data.html', methods=['POST', 'GET'])
+@app.route("/data.html", methods=['POST', 'GET'])
 def data():
     if request.method == 'POST':
        data = request.form.to_dict()
        print(data)
-       return redirect("data.html")
+       return redirect("/data.html")
     else:
         return "something went wrong, try again"
 
+@app.route("/download.html")                       
+def download():
+    return render_template('download.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1')
