@@ -29,10 +29,17 @@ def thankyou():
 def submit_form():
     if request.method == 'POST':
        data = request.form.to_dict()
-       print(data)
+       write_to_file(data)
        return redirect('/thankyou.html')
     else:
         return "something went wrong, try again"
+def write_to_file(data):
+    with open('database.txt', mode='a') as database:
+        fname = data['fname']
+        lname = data['lname']
+        email = data['email']
+        message = data['message']
+        file = database.write(f'\n{fname}, {lname}, {email}, {message}')
 
 @app.route("/download.html")                       
 def download():
