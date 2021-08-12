@@ -28,7 +28,11 @@ def download():
 
 @app.route('/submit_form', methods=['POST', 'GET'])
 def submit_form():
-    return render_template('data.html')
+    error = None
+    if request.method == 'POST':
+       data = request.form.to_dict()
+       print(data)
+       return "form submitted"
 
 
 if __name__ == '__main__':
