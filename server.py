@@ -26,7 +26,7 @@ def submit_form():
     if request.method == 'POST':
        data = request.form.to_dict()
        print(data)
-       return redirect("/data.html")
+       return "Thank You"
     else:
         return "something went wrong, try again"
 
