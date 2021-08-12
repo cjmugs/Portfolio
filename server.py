@@ -1,6 +1,6 @@
 # My Portfolio Site
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 print(__name__)
@@ -26,12 +26,12 @@ def download():
     return render_template('download.html')
 
 
-@app.route('/submit_form', methods=['POST', 'GET'])
-def submit_form():
+@app.route('/data.html', methods=['POST', 'GET'])
+def data():
     if request.method == 'POST':
        data = request.form.to_dict()
        print(data)
-       return "form submitted"
+       return redirect("data.html")
     else:
         return "something went wrong, try again"
 
