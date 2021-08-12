@@ -25,6 +25,15 @@ def contact():
 def thankyou():
     return render_template('thankyou.html')
 
+
+def write_to_file(data):
+    with open('database.txt', mode='a') as database:
+        fname = data['fname']
+        lname = data['lname']
+        email = data['email']
+        message = data['message']
+        file = database.write(f'\n{fname}, {lname}, {email}, {message}')
+
 @app.route("/submit_form", methods=['POST', 'GET'])
 def submit_form():
     if request.method == 'POST':
@@ -33,13 +42,6 @@ def submit_form():
        return redirect('/thankyou.html')
     else:
         return "something went wrong, try again"
-def write_to_file(data):
-    with open('database.txt', mode='a') as database:
-        fname = data['fname']
-        lname = data['lname']
-        email = data['email']
-        message = data['message']
-        file = database.write(f'\n{fname}, {lname}, {email}, {message}')
 
 @app.route("/download.html")                       
 def download():
