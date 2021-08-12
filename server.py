@@ -21,12 +21,16 @@ def projects():
 def contact():
     return render_template('contact.html')
 
+@app.route("/thankyou.html")                       
+def thankyou():
+    return render_template('thankyou.html')
+
 @app.route("/submit_form", methods=['POST', 'GET'])
 def submit_form():
     if request.method == 'POST':
        data = request.form.to_dict()
        print(data)
-       return "Thank You for you info!"
+       return redirect('/thankyou.html')
     else:
         return "something went wrong, try again"
 
