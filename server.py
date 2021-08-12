@@ -27,7 +27,7 @@ def thankyou():
 
 
 def write_to_file(data):
-    with open('database.txt', mode='a') as database:
+    with open('E:\Gits\Portfolio\database.txt', mode='a') as database:
         fname = data['fname']
         lname = data['lname']
         email = data['email']
