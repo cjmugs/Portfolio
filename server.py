@@ -27,12 +27,11 @@ def thankyou():
 
 
 def write_to_file(data):
-    with open('E:\Gits\Portfolio\database.txt', mode='a') as database:
+    with open('C:\Gits\Portfolio\database.txt', mode='a') as database:
         fname = data["fname"]
         lname = data["lname"]
         email = data["email"]
-        message = data["message"]
-        file = database.write(f'\n{fname}, {lname}, {email}, {message}')
+        file = database.write(f'\n{fname}, {lname}, {email}')
 
 @app.route("/submit_form", methods=['POST', 'GET'])
 def submit_form():
