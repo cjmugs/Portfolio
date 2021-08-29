@@ -5,7 +5,7 @@ from flask import Flask, render_template, url_for, request, redirect
 app = Flask(__name__)
 print(__name__)
 
-@app.route("/index.html")                       
+@app.route("/")                       
 def home_page():
     return render_template('index.html')
 
@@ -27,7 +27,7 @@ def thankyou():
 
 
 def write_to_file(data):
-    with open('C:\Gits\Portfolio\database.txt', mode='a') as database:
+    with open('C:\Gits\Portfolio\database.csv', mode='a') as database:
         fname = data["fname"]
         lname = data["lname"]
         email = data["email"]
