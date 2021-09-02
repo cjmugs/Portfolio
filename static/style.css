@@ -1,12 +1,11 @@
 .header{
     background-color: lightslategray;
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 .body{
     text-align: center;
-    background-image: url('/static/3.jpg');
-    background-repeat: no-repeat;
-    background-size: 1920px 1080px;
+    background-color: rgb(175, 175, 175);
     font-family: Arial, Helvetica, sans-serif;
 }
 .me{
@@ -44,4 +43,11 @@
     flex: auto;
     height: 50%;
     width: 50%;
+    align-items: center;
+}
+.resume{
+    flex: auto;
+    height: 60%;
+    width: 60%;
+    align-items: center;
 }
