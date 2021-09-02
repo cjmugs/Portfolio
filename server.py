@@ -31,7 +31,8 @@ def write_to_file(data):
         fname = data["fname"]
         lname = data["lname"]
         email = data["email"]
-        file = database.write(f'\n{fname}, {lname}, {email}')
+        message = data["message"]
+        file = database.write(f'\n{fname}, {lname}, {email}, {message}')
 
 @app.route("/submit_form", methods=['POST', 'GET'])
 def submit_form():
