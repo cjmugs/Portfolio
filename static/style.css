@@ -1,6 +1,6 @@
 .header{
     overflow: hidden;
-    background-color: #d1d1d1;
+    background-color: #9fa8a3;
     padding: 10px 10px;
     border-radius: 10px;
 }
@@ -21,13 +21,13 @@
   }
   
   .header a:hover {
-    background-color: rgb(142, 255, 157);
+    background-color: #c5d5cb;
     color: black;
   }
 
   .header a.active {
     background-color: rgb(94, 94, 94);
-    color: rgb(142, 255, 157);
+    color: #c5d5cb;
   }
   .header a.active:hover {
     background-color: rgb(94, 94, 94);
@@ -53,7 +53,7 @@
 }
 .body{
     text-align: center;
-    background-color: rgb(175, 175, 175);
+    background-color: #e3e0cf;
     font-family: Arial, Helvetica, sans-serif;
 }
 .me{
