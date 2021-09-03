@@ -1,7 +1,7 @@
 .header{
     overflow: hidden;
     background-color: #9fa8a3;
-    padding: 10px 10px;
+    padding: 5px 5px;
     border-radius: 10px;
 }
 .header a {
@@ -12,7 +12,7 @@
     text-decoration: none;
     font-size: 16px; 
     line-height: 25px;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 10px;
   }
   header a.logo {
@@ -30,6 +30,7 @@
   }
   .header a.active:hover {
     color: #8b0101;
+    border-radius: 20px;
   }
   
   .header-right {
@@ -51,7 +52,9 @@
 }
 .body{
     text-align: center;
-    background-color: #e3e0cf;
+    background-image: linear-gradient( #e3e0cf, #4e4e4b);
+    background-size: 1920px 1980px;
+    background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
 }
 .me{
