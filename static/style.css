@@ -106,11 +106,15 @@
   flex-direction: row;
   background-color: #9fa8a3;
   flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 15px;
 }
 
 .flex-container > div {
-  background-color: #f1f1f1;
   margin: 28px;
-  padding: 10px;
   font-size: 30px;
+}
+.contact_form{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
 }
