@@ -6,7 +6,7 @@
 }
 .header a {
     float: left;
-    color: black;
+    color: #8b0101;
     text-align: center;
     padding: 10px;
     text-decoration: none;
@@ -21,13 +21,17 @@
   }
   
   .header a:hover {
-    background-color: #ddd;
+    background-color: rgb(142, 255, 157);
     color: black;
   }
 
   .header a.active {
     background-color: rgb(94, 94, 94);
-    color: white;
+    color: rgb(142, 255, 157);
+  }
+  .header a.active:hover {
+    background-color: rgb(94, 94, 94);
+    color: #8b0101;
   }
   
   .header-right {
