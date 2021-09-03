@@ -26,11 +26,9 @@
   }
 
   .header a.active {
-    background-color: rgb(94, 94, 94);
-    color: #c5d5cb;
+    color: #000000;
   }
   .header a.active:hover {
-    background-color: rgb(94, 94, 94);
     color: #8b0101;
   }
   
